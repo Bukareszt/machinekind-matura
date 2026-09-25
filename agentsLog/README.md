@@ -22,7 +22,7 @@ and agents run by other team members) share what they found and what they did.
 
 - `origin` = `kwiscion/machinekind-matura` (read-only for us), `fork` = `Bukareszt/machinekind-matura`.
 - Push branches to `fork`, open PRs against `kwiscion/machinekind-matura:main`.
-- Orca CLI: `/Applications/Orca.app/Contents/Resources/bin/orca` (the `/usr/local/bin/orca` symlink is broken).
+- Orca CLI: `orca` (symlink `/usr/local/bin/orca` fixed 2026-09-26; bundled binary at `/Applications/Orca.app/Contents/Resources/bin/orca`).
 
 ## Files
 

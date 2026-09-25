@@ -16,8 +16,8 @@
   branches/PRs from this account cannot be pushed to `origin` directly. Issues and comments
   work (public repo). If pushing becomes necessary, a fork under `Bukareszt` will be used
   and a PR opened from it. This blocks "merge without approval" until Greg gets push rights.
-- Orca CLI symlink (`/usr/local/bin/orca`) is broken, but the bundled CLI works:
-  `/Applications/Orca.app/Contents/Resources/bin/orca`. Orca runtime is ready, so issue
+- Orca CLI symlink (`/usr/local/bin/orca`) was unreadable (root-owned, mode 0700); fixed with
+  `chmod -h 755`, so plain `orca` works now. Orca runtime is ready, so issue
   tasks are dispatched as Orca worktrees (`orca worktree create --agent claude --issue <n>
   --prompt ...`), falling back to in-session subagents if Orca is unavailable.
 - Fork `Bukareszt/machinekind-matura` created so branches can be pushed and PRs opened

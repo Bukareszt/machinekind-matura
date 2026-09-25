@@ -18,6 +18,12 @@ and agents run by other team members) share what they found and what they did.
 7. Keep this folder up to date — read the latest entries here before starting a task so you
    don't redo work another agent already did.
 
+## Git workflow (until `@Bukareszt` has push access to `kwiscion/machinekind-matura`)
+
+- `origin` = `kwiscion/machinekind-matura` (read-only for us), `fork` = `Bukareszt/machinekind-matura`.
+- Push branches to `fork`, open PRs against `kwiscion/machinekind-matura:main`.
+- Orca CLI: `/Applications/Orca.app/Contents/Resources/bin/orca` (the `/usr/local/bin/orca` symlink is broken).
+
 ## Files
 
 - `AGENT_BRIEF.md` — the brief to paste into every new agent session.
